@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Landing page </title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h1 class="logo"> Logo </h1>
+            <div class="toggle"> </div>
+        </header>
+
+        <video src="video.mp4" muted loop autoplay> </video> 
+        <div class="overlay"></div>
+        <div class="text">
+            <h2> Landing page </h2>
+            <h3> example </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Error laudantium omnis
+                nemo totam officia pariatur, tempora id
+                quasi eos sint laborum cum aliquam dolor
+                magni repellendus cumque consequatur
+                tempore atque?
+            </p>
+            <a href="#"> Get started </a>
+        </div>
+        <ul class="social">
+            <li> <a href="#"><img src="/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="/instagram.png" alt="instagram"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</li></a>
+            <li><a href="#">About</li></a>
+            <li><a href="#">Contact</li></a>
+        </ul>
+    </div>
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+    })
+</script>
+</body>
+
+</html>
